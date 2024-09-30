@@ -5,7 +5,7 @@ from .models import User, UserProfile
 
 class UserProfileInline(admin.StackedInline):
     model = UserProfile
-    can_delete = False
+    can_delete = False # Admin has update accesss
     verbose_name_plural = 'profile'
 
 
